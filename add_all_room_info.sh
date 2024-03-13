@@ -7,9 +7,9 @@ gamePath="${path}/../game_${gameId}"
 echo "path: ${path}"
 echo "game id: ${gameId}"
 
-# cd $gamePath
-# git pull origin main
-# cd -
+cd $gamePath
+git pull origin main
+cd -
 # sh sych_cpp_submodule.sh ${gameId}
 # pwd
 
