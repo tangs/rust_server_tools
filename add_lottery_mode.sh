@@ -2,7 +2,7 @@
 
 path=`pwd`
 gameId=$1
-gamePath="../game_${gameId}"
+gamePath="${path}/../game_${gameId}"
 
 echo "path: ${path}"
 echo "game id: ${gameId}"
@@ -14,7 +14,7 @@ sh sych_cpp_submodule.sh ${gameId}
 pwd
 
 cd utils
-node src/add_lottery_mode.js /Users/tangs/Documents/slots_server_rust/game_${gameId}
+node src/add_lottery_mode.js $gamePath
 cd -
 
 cd $gamePath
