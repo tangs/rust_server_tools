@@ -136,7 +136,7 @@ const updateGameServiceRs = () => {
     console.log(`start update ${fileName}`);
     const fileContent = fs.readFileSync(path).toString();
 
-    if (fileContent.indexOf("let table_seat_players = GAME_SERVICE.get_all_table_players_count()?;") != -1) {
+    if (fileContent.indexOf("table_seat_players") != -1) {
         console.log(`skip update ${fileName}\n`)
         return false;
     }
